@@ -1,0 +1,1 @@
+PUBLIC_URL = 'https://decently-pioneering-tilefish.cloudpub.ru'

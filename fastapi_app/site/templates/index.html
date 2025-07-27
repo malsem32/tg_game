@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">  <!-- Подключение CSS -->
+    <link href="https://fonts.cdnfonts.com/css/blogger-sans" rel="stylesheet">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="/static/js/main.js"></script>
+</head>
+<body onload="setProfile()">
+    <div class="header">Мой профиль</div>
+    <div class="container">
+        <div class="profile">
+            <div class="profile__image">
+                <img id="profile_image" src="" alt="">
+            </div>
+            <div class="profile__info">
+                <div id="profile_name" class="profile__name">
+
+                </div>
+                <div id="profile_user_id" class="profile__user_id">
+
+                </div>
+                <div class="profile__top__place">
+                    Ваш топ: 2341 место
+                </div>
+
+            </div>
+        </div>
+        <div class="date_info">
+            <div>Дата регистрации:</div>
+            <div id="date_registration">
+
+            </div>
+        </div>
+        <div class="about__me">
+            <div>Описание:</div>
+            <div>Я люблю когда волосатые мужики обмазываются маслом, чикенбургер ван лав, паша гей</div>
+        </div>
+        <div class="balance__info">
+            <div>Ваш баланс:</div>
+            <div>342 452 $</div>
+            <div>2 134 €</div>
+        </div>
+        <div class="cash__slaves__info">
+            <div>Доход от рабов:</div>
+            <div>234$/час</div>
+        </div>
+        <div class="collect__button__container">
+            <button class="collect_button">Собрать деньги с рабов</button>
+        </div>
+        <div class="invite__button__container">
+            <button class="invite_button" onclick="CopyLinkOnClick()">Пригласить друга (он станет вашим рабом)</button>
+        </div>
+        <div id="popup_link" class="popup_link">
+            <div class="popup-content-link">
+                <span class="close" id="closePopup" onclick="ClosePopupLink()">&times;</span>
+                <p>Скопируйте ссылку:</p>
+                <input type="text" id="link_value" value="https://example.com" readonly>
+            </div>
+        </div>
+        <div class="navigation__menu">
+            <button id="profile_button" class="nav__button active" onclick="location.href='/'">
+                <img class="nav__image" src="/static/images/nav_menu/profile.png" alt="">
+            </button>
+            <button id="slaves_button" class="nav__button" onclick="location.href='/slaves'">
+                <img class="nav__image" src="/static/images/nav_menu/slave.png" alt="">
+            </button>
+            <button id="top_players_button" class="nav__button" onclick="location.href='/top_players'">
+                <img class="nav__image" src="/static/images/nav_menu/rating.png" alt="">
+            </button>
+            <button id="settings_button" class="nav__button" onclick="location.href='/settings'">
+                <img class="nav__image" src="/static/images/nav_menu/settings.png" alt="">
+            </button>
+        </div>
+    </div>
+
+
+</body>
+</html>

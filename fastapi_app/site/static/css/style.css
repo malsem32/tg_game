@@ -1,0 +1,304 @@
+body {
+    font-family: 'Blogger Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 16px;
+    color: white;
+    background: #282726;
+
+}
+
+.header {
+    background-color: #563838;
+
+    text-align: center;
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+.container {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+.profile {
+    display: flex;
+
+}
+.profile__info {
+    display: block;
+    margin-left: 20px;
+}
+.profile__top__place {
+    margin-top: 40px;
+}
+
+.profile__image img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.date_info {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: #563838;
+    border-radius: 5px;
+}
+
+.about__me {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: #563838;
+    border-radius: 5px;
+}
+
+.balance__info {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: #563838;
+    border-radius: 5px;
+}
+
+.cash__slaves__info {
+    margin-top: 20px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: #563838;
+    border-radius: 5px;
+}
+
+.collect__button__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.collect_button {
+    border-radius: 10px;
+    background: #563838;
+    border: none;
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding-top: 5px;
+}
+
+.invite__button__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.popup_link {
+    display: none; /* Скрыть по умолчанию */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content-link {
+    background: #563838;
+    padding: 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+.invite_button {
+    border-radius: 10px;
+    background: #563838;
+    border: none;
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+    color: inherit;
+    padding-top: 5px;
+}
+
+.navigation__menu {
+    display: flex;
+    background: #563838;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px 0;
+}
+
+.nav__button {
+    background: transparent;
+    border-radius: 10px;
+    padding: 0 10px;
+    padding-top: 5px;
+    border: none;
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+    color: inherit;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+.active {
+    background: #6A8A82;
+}
+
+.nav__image {
+    width: 20px;
+    height: 20px;
+}
+
+.slave__avatar__image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.slave__avatar__button {
+    background: transparent;
+    border: none;
+}
+
+
+
+.slave__improve__image {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.slave__sell__button {
+    background: transparent;
+    border: none;
+}
+
+.slave__block__image {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.slave__sell__image {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.slave__item {
+    display: grid;
+    justify-content: start;
+    background: #4a2d2d;
+    border-radius: 15px;
+    padding: 5px;
+}
+.slave__action__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.slave__improve__button {
+    background: #1aab18;
+    border: none;
+    border-radius: 30%;
+    display: flex;
+    align-items: center ;
+}
+
+.slave__block__button {
+    background: #b3a24f;
+    border-radius: 30%;
+    border: none;
+    display: flex;
+    align-items: center ;
+}
+
+.slave__sell__button {
+    background: #ab3a18;
+    border-radius: 30%;
+    border: none;
+    display: flex;
+    align-items: center ;
+}
+
+.slave__nickname{
+    display: flex;
+    justify-content: center;
+    background: #563838;
+    border-radius: 15px;
+    padding-top: 5px;
+}
+
+.slaves__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Два столбца одинаковой ширины */
+    gap: 20px; /* Промежуток между элементами */
+    justify-items: center;
+
+}
+
+.just__item {
+    margin-top: 50px;
+}
+
+.slave__improve__text {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 8px;
+    letter-spacing: 0;
+}
+
+.slave__block__text {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 8px;
+    letter-spacing: 0;
+}
+
+.slave__sell__text {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 8px;
+    letter-spacing: 0;
+}
+
+.slave__improve {
+    margin-right: 5px;
+}
+
+.slave__block {
+    margin-right: 5px;
+
+}
+
